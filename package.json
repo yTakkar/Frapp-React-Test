@@ -11,12 +11,10 @@
   "dependencies": {
     "animate-components": "^1.4.8",
     "axios": "^0.17.1",
-    "handy-log": "^1.0.3",
     "handy-notification": "^1.0.26",
     "jquery": "^3.3.1",
     "prop-types": "^15.6.0",
     "react": "^16.2.0",
-    "react-content-loader": "^3.1.1",
     "react-custom-scrollbars": "^4.2.1",
     "react-dom": "^16.2.0",
     "react-helmet": "^5.2.0",

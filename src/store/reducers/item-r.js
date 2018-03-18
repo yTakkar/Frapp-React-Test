@@ -1,9 +1,7 @@
 /* eslint indent:0 */
 /* eslint no-unreachable:0 */
-import ListData from './items-data'
-
 const fav_defaults = {
-  list: ListData,
+  list: [],
   favourites: []
 }
 

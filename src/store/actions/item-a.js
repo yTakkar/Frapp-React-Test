@@ -1,9 +1,11 @@
 export const getList = () => {
   return dispatch => {
-    fetch('http://54.169.233.100:8080/favourite.json', { mode: 'no-cors' })
-      .then(data =>
-        dispatch({ type: 'GET_LIST', payload: data.body })
-      )
+    fetch('https://cors-anywhere.herokuapp.com/http://54.169.233.100:8080/favourite.json')
+      .then(res => res.json())
+      .then(data => {
+        dispatch({ type: 'GET_LIST', payload: data })
+        console.log(data)
+      })
       .catch(err => console.error(err))
   }
 }

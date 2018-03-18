@@ -5,6 +5,7 @@ import Spinner from './spinner'
 import { connect } from 'react-redux'
 import Item from './item'
 import { Scrollbars } from 'react-custom-scrollbars'
+import { getList } from '../store/actions/item-a'
 
 @connect(store => (
   { list: store.Items.list }
@@ -16,9 +17,8 @@ export default class Lists extends React.Component {
     loading: false
   }
 
-  componentDidMount = () => {
-    // this.props.dispatch(getList())
-  }
+  componentDidMount = () =>
+    this.props.dispatch(getList())
 
   componentWillReceiveProps = () =>
     this.setState({ loading: false })
